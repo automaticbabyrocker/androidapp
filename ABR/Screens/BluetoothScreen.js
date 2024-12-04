@@ -82,7 +82,7 @@ const style = StyleSheet.create({
     marginBottom:50,
   },
   connectButton: {
-    backgroundColor: '#C6E7FF',
+    backgroundColor: '#FEECB5',
     width: 150,
     height: 40,
     borderRadius: 20,
@@ -91,5 +91,6 @@ const style = StyleSheet.create({
   },
   textOnConnectButton: {
     fontSize: 16,
+    fontWeight:'bold'
   },
 });

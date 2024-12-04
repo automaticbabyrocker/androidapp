@@ -53,7 +53,7 @@ const style = StyleSheet.create({
     logo:{
         width:60,
         height:60,
-        borderRadius:30,
+        objectFit:'contain'
     },
     menuView:{
         // backgroundColor:'#CC2B52',

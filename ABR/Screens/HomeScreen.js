@@ -13,19 +13,23 @@ export default function HomeScreen({navigation}) {
         source={require('../Images/logo.jpg')}
         style={style.image}
         />
+        <Text style={style.title}>ABR</Text>
     </View>
   )
 }
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor:'blue',
     alignItems:'center',
     justifyContent:'center'
   },
   image:{
     width:250,
     height:250,
-    borderRadius:125,
+    objectFit:'contain'
+  },
+  title:{
+    fontSize:32,
+    fontWeight:'bold',
   }
 })

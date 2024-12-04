@@ -6,10 +6,9 @@ import NavigationButtons from '../utils/NavigationButtons'
 
 export default function BatteryScreen({navigation}) {
   return (
-    <ScreenLayout>
+    <ScreenLayout navigation={navigation} page={"Battery"}>
         <View style={styles.container}>
             <Battery percentage={45}/>
-            <NavigationButtons navigation={navigation} page={"Battery"}/>
         </View>
     </ScreenLayout>
   )

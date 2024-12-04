@@ -3,7 +3,7 @@ import { View, StyleSheet } from 'react-native';
 import Header from '../utils/Header';
 import FooterBar from '../utils/FooterBar';
 
-export default function ScreenLayout({ children , hideFooter}) {
+export default function ScreenLayout({ children , hideFooter , page , navigation}) {
   return (
     <View style={styles.container}>
       <View style={{ flex: 2 }}>
@@ -14,7 +14,7 @@ export default function ScreenLayout({ children , hideFooter}) {
       </View>
       {hideFooter ? null : 
       <View style={{flex: 1}}>
-        <FooterBar />
+        <FooterBar page={page} navigation={navigation}/>
       </View>}
     </View>
   );

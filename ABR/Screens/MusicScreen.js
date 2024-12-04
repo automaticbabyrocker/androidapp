@@ -85,7 +85,7 @@ export default function MusicScreen({ navigation }) {
   }, [sound]);
 
   return (
-    <ScreenLayout>
+    <ScreenLayout navigation={navigation} page={"Music"}>
       <View style={styles.container}>
         <Text style={styles.title}>נגן מוזיקה</Text>
 
@@ -107,7 +107,7 @@ export default function MusicScreen({ navigation }) {
           </View>
         )}
 
-        <NavigationButtons navigation={navigation} page={'Music'} />
+        {/* <NavigationButtons navigation={navigation} page={'Music'} /> */}
       </View>
     </ScreenLayout>
   );
